@@ -1,0 +1,8 @@
+*.sln
+*.csproj
+*csproj.user
+efpt.config.json
+appsettings.Development.json
+obj/
+bin/
+.vs/

@@ -1,0 +1,9 @@
+*.test.js
+*.env
+*.json
+
+node_modules/
+
+setupTests.js
+reportWebVitals.js
+logo.svg
