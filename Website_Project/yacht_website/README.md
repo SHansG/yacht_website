@@ -1,1 +1,1 @@
-This project was bootstrapped with [create-react-app][1](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [create-react-app](https://github.com/facebook/create-react-app).
