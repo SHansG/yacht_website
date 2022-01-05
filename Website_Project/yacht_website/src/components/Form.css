@@ -1,0 +1,14 @@
+.form {
+    background-color: aqua;
+}
+
+.form > table {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.form > table > td {
+    padding: 10px;
+}

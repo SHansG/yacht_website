@@ -1,5 +1,6 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
+import './GoogleMapComponent.css'
 
 
 
@@ -29,19 +30,24 @@ function SimpleMap(){
   };
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: '50vh', width: '100%', padding: '10px 10px', position: 'flex' }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-        defaultOptions={{fullscreenControl: false, zoomControl : false}}
-      >
-        <Marker
-          lat={defaultProps.center.lat}
-          lng={defaultProps.center.lng}
-          text="My Marker"
-        />
-      </GoogleMapReact>
+    <div className="centered-container">
+      <div style={{
+        height: '50vh', 
+        width: '50%',
+        padding: '25px 25px'}}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
+          defaultOptions={{fullscreenControl: false, zoomControl : false}}
+        >
+          <Marker
+            lat={defaultProps.center.lat}
+            lng={defaultProps.center.lng}
+            text="My Marker"
+          />
+        </GoogleMapReact>
+      </div>
     </div>
   );
 }
